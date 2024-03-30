@@ -1,5 +1,6 @@
 :root {
     --skin: #f6c09c;
+    --neck: #ED927D;
     --background: #ed4042;
     --red: #ed2860;
     --dark-red: #680524;
@@ -16,6 +17,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
   }
   
   .head{
@@ -27,21 +29,98 @@
   }
 
   .eye-left{
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 27px;
     background: var(--white);
     position: absolute;
-    top: 80px;
+    top: 70px;
     border-radius: 50%;
-    left: 30px;
+    left: 24px;
+    border-radius: 50% 0% 100% 100%;
   }
 
   .eye-right{
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 27px;
     background: var(--white);
     position: absolute;
-    top: 80px;
-    border-radius: 50%;
-    right: 30px;
+    top: 70px;
+    border-radius: 0% 50% 100% 100%;
+    right: 24px;
   }
+
+  .pupil-left{
+    width: 6px;
+    height: 6px;
+    background: var(--black);
+    border-radius: 100%;
+    position: absolute;
+    top: 75px;
+    left: 35px;
+  }
+
+  .pupil-right{
+    width: 6px;
+    height: 6px;
+    background: var(--black);
+    border-radius: 100%;
+    position: absolute;
+    top: 75px;
+    right: 35px;
+  }
+
+  .ear-left{
+    width: 35px;
+    height: 35px;
+    background: var(--neck);
+    position: absolute;
+    border-radius: 50%;
+    top: 70px;
+    left: -30px;
+    z-index: -1;
+    border-radius: 100% 0% 0% 100%;
+
+  }
+
+  .ear-right{
+    width: 35px;
+    height: 35px;
+    background: var(--neck);
+    position: absolute;
+    border-radius: 50%;
+    top: 70px;
+    right: -30px;
+    z-index: -1;
+    border-radius: 0% 100% 100% 0%;
+  }
+
+  .neck{
+    width: 80px;
+    height: 100px;
+    background: var(--neck);
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    z-index: -1; 
+  }
+
+  .nose{
+    width: 35px;
+    height: 35px;
+    background: var(--skin);
+    border-radius: 100%;
+    position: absolute;
+    left: 32px;
+    top: 95px;
+    z-index: 1; 
+  }
+
+  .beard{
+    width: 100px;
+    height: 100px;
+    background: var(--black);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -10px;
+  }
+
